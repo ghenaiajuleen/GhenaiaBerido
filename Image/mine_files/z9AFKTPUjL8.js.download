@@ -1,0 +1,3 @@
+;/*FB_PKG_DELIM*/
+
+__d("InstantGamesSocialContextNoText.relayprovider",["qex"],(function(a,b,c,d,e,f,g){"use strict";a={get:function(){return c("qex")._("87")===!0}};g["default"]=a}),98);

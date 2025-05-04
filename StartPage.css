@@ -1,0 +1,426 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@font-face {
+  font-family: "gilroy";
+  src: url("gilroy/Radomir\ Tinkov\ -\ Gilroy-Medium.otf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: gilroy;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.mLogo {
+  height: 8vh;
+}
+.eLogo {
+  height: 6vh;
+}
+
+.navbar {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  height: 13%;
+  font-size: 18px;
+  position: fixed;
+  width: 100vw;
+  opacity: 0.6;
+  z-index: 5;
+}
+
+.why-title {
+  width: 50%;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links ul li a {
+  display: block;
+  padding: 20px 45px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar-links ul li a:hover {
+  background-color: #444;
+}
+
+.navbar-links a:hover {
+  background-color: gray;
+  color: orange;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/* HEADER */
+.banner {
+  display: flex;
+  background-color: #759eb8;
+  height: 100vh;
+  font-size: 2em;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 20vh;
+  color: white;
+}
+.cb-slideshow li {
+  list-style: none;
+}
+
+.text_header {
+  font-size: 1.6rem;
+  text-align: justify;
+  color: black;
+  font-family: sans-serif;
+}
+
+.explore {
+  text-decoration: none;
+  border-radius: 8px;
+  background-color: orange;
+  color: white;
+  font-size: 1.1rem;
+  padding: 1vw;
+  width: 60vw;
+}
+
+.explore:hover {
+  background-color: rgb(223, 160, 45);
+  color: white;
+}
+
+.word {
+  display: flex;
+  gap: 40px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 5vw;
+  font-weight: bold;
+  padding-top: 20%;
+  justify-content: center;
+}
+.ex_button {
+  padding-left: 20vw;
+}
+.header_content {
+  display: flex; /* alien added*/
+  flex-direction: column;
+  z-index: 8;
+}
+
+.why {
+  color: white;
+}
+
+.vancouver {
+  color: orange;
+}
+
+/* OPTIONS */
+
+.title {
+  display: flex;
+  height: 100%;
+  grid-column: span 4;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: large;
+}
+.what2 {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 3.2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f4f8f6;
+  padding-top: 10vh;
+  z-index: 2;
+  justify-content: center;
+}
+
+.menuContainer {
+  display: grid;
+  background-color: #f4f8f6;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  z-index: 2;
+}
+
+.menu {
+  grid-column: span 1;
+  margin: 1vh 1em 2vh 1em;
+  border-radius: 10px;
+  font-size: 2vw;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+.menu1 {
+  background-image: url("Image/interest.png");
+  background-size: cover;
+}
+
+.menu2 {
+  background-image: url("Image/travel.png");
+  background-size: cover;
+}
+.menu3 {
+  background-image: url("Image/goal.png");
+  background-size: cover;
+}
+.menu4 {
+  background-image: url("Image/naya2.png");
+  background-size: cover;
+}
+.button {
+  display: flex;
+  background-color: white;
+  margin: 80% 5% 5% 5%;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.menu :hover {
+  background-color: rgb(223, 160, 45);
+  color: white;
+}
+
+/* CONTACT */
+.contact_content {
+  height: 100%;
+  padding-top: 3rem;
+}
+.contact_us {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  font-size: 50px;
+}
+
+input[type="text"],
+select {
+  background-color: #fafafa;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #818181;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.split-screen {
+  display: flex;
+}
+
+.split-screen__half {
+  flex: 1;
+}
+.form1 {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form2 {
+  justify-content: space-between;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+.f1,
+.f2 {
+  width: 50%;
+}
+.f2 {
+  margin-left: 2vh;
+}
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  width: 40%;
+  background-color: orange;
+  color: white;
+  padding: 12px 5px;
+  margin: 30px 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Add a background color to the submit button on mouse-over */
+input[type="submit"]:hover {
+  background-color: rgb(223, 160, 45);
+}
+
+/* FOOTER */
+.footer {
+  background-color: #212723;
+  height: 100%;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  align-content: left;
+}
+
+.row1 {
+  width: 50%;
+  padding-top: 1%;
+}
+
+.row2 {
+  width: 50%;
+  /* align-items: right; */
+  align-content: left;
+}
+
+.text_footer {
+  font-size: 1rem;
+  padding-left: 2vw;
+  line-height: 1.4;
+  text-align: justify;
+  color: #ddd;
+}
+
+.image-with-text {
+  display: flex;
+  align-items: center;
+  font-size: 2vw;
+}
+
+.textrightfooter {
+  padding-left: 20%;
+  padding-top: 3%;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.row2content {
+  padding-top: 3%;
+  padding-left: 30%;
+}
+
+.copyright {
+  size: 2vw;
+}
+/* FOOTER */
+ul > li {
+  list-style-type: none;
+}
+
+.logolink {
+  display: flex;
+  gap: 1rem;
+}
+
+.fIcon {
+  width: 5vw;
+}
+
+/* Alien edited */
+/* mobile style: * *********************************************************************************************/
+@media only screen and (max-width: 480px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+  .menuContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .text_footer {
+    display: none;
+  }
+}

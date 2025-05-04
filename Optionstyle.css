@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: gilroy;
+  text-align: center;
+  color: black;
+  background-color: gray;
+}
+
+/* Navigation */
+.navmain {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.st_nav {
+  display: none;
+}
+
+.navleft {
+  height: 100vh;
+  background-color: #1b1f24;
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  font-size: 2.5vw;
+  width: 23vw;
+}
+
+.navright {
+  width: 77%;
+  height: 100%;
+  margin-left: 23%;
+  padding: 2rem;
+  height: 100vh;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  margin: 1rem 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #f39c12;
+}
+
+.why-title {
+  font-size: 2vw;
+  margin: 1rem 0;
+  font-weight: bold;
+  color: orange;
+  display: flex;
+  align-items: center;
+  padding-top: 5vh;
+}
+
+.logo {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 6vw;
+}
+
+/* Tourist Spot Items */
+.ItemList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 3.5rem;
+}
+
+.ItemListabout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 5rem;
+}
+
+.pageTitleabout {
+  padding-top: 5rem;
+}
+
+.item {
+  width: 30%;
+  height: 20rem;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.item img {
+  width: 100%;
+}
+
+.item h3 {
+  font-size: 1.1rem;
+
+  margin: 1rem;
+  color: #63ab45;
+}
+
+.item h5 {
+  font-size: 0.9rem;
+  margin: 0.5rem 1rem;
+  color: #818181;
+  font-weight: 200;
+  line-height: 1.3vw;
+}
+
+/* Right Content */
+.description {
+  text-align: justify;
+  padding-left: 20%;
+  padding-right: 20%;
+  font-size: 30px;
+}
+
+#myLinks {
+  position: relative;
+  width: 100%;
+}
+
+.icon {
+  display: none;
+}
+.pageTitle img {
+  align-items: center;
+  width: 100vw;
+}
+
+.pageTitleabout img {
+  align-items: center;
+  width: 90%;
+}
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .navmain {
+    display: block;
+  }
+  .item h5 {
+    font-size: 0.9rem;
+    margin: 0.5rem 1rem;
+    color: #818181;
+    font-weight: 200;
+    line-height: 4vw;
+  }
+  .navleft {
+    display: block;
+    width: 100%;
+    height: 12vh;
+    position: relative;
+    padding: 1rem;
+  }
+  .pageTitle img {
+    align-items: center;
+  }
+  .navright {
+    width: 100%;
+    margin-left: 0;
+    padding: 1rem;
+    height: 100%;
+  }
+
+  .ItemList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    width: 100%;
+  }
+  li {
+    display: inline;
+    float: left;
+    padding: 1vw;
+  }
+  a {
+    font-size: 2vw;
+  }
+  .why-title {
+    padding-top: 0vh;
+  }
+  .icon {
+    display: block;
+  }
+  .menu2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .place {
+    display: none;
+  }
+  .icon {
+    float: right;
+  }
+  #myLinks {
+    display: none;
+    z-index: 10;
+  }
+}

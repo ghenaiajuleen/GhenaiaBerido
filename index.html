@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="StartPage.css" />
+    <link rel="stylesheet" href="StartPage2.css" />
+    <link rel="stylesheet" href="navMenu.css" />
+    <script src="StartPage.js" defer></script>
+    <title>My Hobbies</title>
+  </head>
+  <body>
+    <!-- START OF NAVBAR -->
+    <header>
+      <figure class="brand">
+        <img class="mLogo" src="Image/naya.png" />
+      </figure>
+      <nav class="navMenu">
+        <input type="checkbox" id="menuToggle" />
+        <label for="menuToggle" class="menu-icon"
+          ><i class="gg-menu"></i
+        ></label>
+        <ul>
+          <li><a href="index.html" style="font-size: 1.5rem">Home</a></li>
+          <li><a href="#contact" style="font-size: 1.5rem">Message Me</a></li>
+          <li><a href="AboutUs.html" style="font-size: 1.5rem">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- END OF NAVBAR -->
+
+    <!-- START OF HEADER -->
+    <div class="banner">
+      <ul class="cb-slideshow">
+        <li><span>Image 01</span></li>
+        <li><span>Image 02</span></li>
+        <li><span>Image 03</span></li>
+        <li><span>Image 04</span></li>
+        <li><span>Image 05</span></li>
+        <li><span>Image 06</span></li>
+      </ul>
+      <div class="header_content">
+        <div class="word">
+          <div class="why">Everything</div>
+          <div class="vancouver">About Me!</div>
+        </div>
+        <br />
+        <div class="ex_button">
+          <a href="#content" class="explore">Let's Begin!...</a>
+        </div>
+      </div>
+    </div>
+    <!-- END OF HEADER -->
+
+    <!-- OPTIONS -->
+
+    <div id="content" class="what2">
+      What do you<br />
+      want to visit?
+    </div>
+    <div class="menuContainer" style="font-size: 1.2rem">
+      <div class="menu menu1 space">
+        <a href="Food.html" class="button" style="font-size: 1.2rem"
+          >Interest</a
+        >
+        <!--Interest-->
+      </div>
+      <div class="menu menu2">
+        <a href="Tourist.html" class="button" style="font-size: 1.2rem">
+          Countries I want to Visit
+        </a>
+      </div>
+      <div class="menu menu3">
+        <a href="Activities.html" class="button" style="font-size: 1.2rem">
+          Goals
+        </a>
+      </div>
+      <div class="menu menu4">
+        <a href="AboutUs.html" class="button" style="font-size: 1.2rem">
+          About Me
+        </a>
+      </div>
+    </div>
+
+    <!-- END OF OPTIONS -->
+
+    <!-- CONTACT -->
+    <div id="contact">
+      <div class="contact_content">
+        <div class="contact_us">Questions? Message Me!</div>
+        <form
+          class="form1"
+          onsubmit="return false"
+          action="https://formspree.io/f/xpzelkqk"
+          method="POST"
+        >
+          <div class="form2">
+            <div class="f1">
+              <input type="text" id="fname" name="fname" placeholder="Name" />
+            </div>
+            <div class="f2">
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+          </div>
+          <input
+            type="text"
+            id="message"
+            name="message"
+            placeholder="Message"
+            required
+          />
+
+          <input type="submit" value="Submit" onclick="submitForm(this.form)" />
+        </form>
+      </div>
+    </div>
+    <!-- END OF CONTACT -->
+  </body>
+</html>
